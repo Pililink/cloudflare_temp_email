@@ -18,6 +18,7 @@ jobs:
       - name: Checkout fork
         uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 0
           token: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
 
